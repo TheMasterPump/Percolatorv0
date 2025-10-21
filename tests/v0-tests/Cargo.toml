@@ -1,0 +1,15 @@
+[package]
+name = "v0-tests"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+percolator-router = { path = "../../programs/router" }
+percolator-slab = { path = "../../programs/slab" }
+percolator-common = { path = "../../programs/common" }
+pinocchio = { workspace = true }
+pinocchio-pubkey = { workspace = true }
+
+[lib]
+path = "src/lib.rs"
